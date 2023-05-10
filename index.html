@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" type="module"></script>
+    <title>Poupounella</title>
+  </head>
+  <body>
+    <!-- //start screen -->
+    <div id="introContainer" class="visible">
+      <div id="introScreen">
+        <div class="imageContainer"></div>
+        <h1>Poupounella</h1>
+        <div class="articleContainer">
+          <article class="articleIntro">
+            Join Poupounella, a determined ballerina, on her quest to reach
+            Galala, the grandest ballet of the year.
+          </article>
+
+          <article class="articleIntro">
+            Help her collect Cloudollars and overcome monsters along the way.
+            Will you fulfill Poupounella's dream?
+          </article>
+
+          <article class="articleIntro">
+            Embark on this enchanting adventure now!
+          </article>
+          <div class="containerBtn">
+            <button id="btnStart" class="btn">Start Game</button>
+            <button id="btnRules" class="btn">Read rules</button>
+          </div>
+        </div>
+        <div class="imageContainer"></div>
+      </div>
+    </div>
+
+    <!-- //rules screen -->
+    <div id="rulesScreen" class="hidden">
+      <h2>How can you play with Poupounella ?</h2>
+      <hr />
+      <div class="articleContainer">
+        <div>
+          <h3 class="faq-page">Launch the Game:</h3>
+          <article class="faq-body">
+            the "Start" button to begin playing this masterpiece. The more
+            points you collect, the higher your score will be.
+          </article>
+        </div>
+
+        <div>
+          <h3 class="faq-page">Control Poupounella:</h3>
+          <article class="faq-body">
+            Use the arrow keys (up, down, left, and right) on your keyboard to
+            move Poupounella in four directions: up, down, left, and right.
+            Navigate Poupounella through the game area to collect points.
+          </article>
+        </div>
+
+        <div>
+          <h3 class="faq-page">Engage in Combat:</h3>
+          <article class="faq-body">
+            The spacebar on your keyboard to attack enemies. Time your attacks
+            correctly to make the enemies disappear.
+          </article>
+          <h3 class="faq-page">Avoid Enemies:</h3>
+          <article class="faq-body">
+            Avoid colliding with enemies, as they can hinder Poupounella's
+            progress.
+          </article>
+        </div>
+
+        <div>
+          <h3 class="faq-page">Score Points:</h3>
+          <article class="faq-body">
+            Collect as many points as possible to increase your score.
+          </article>
+        </div>
+
+        <div id="btnBack" class="btn">Back</div>
+      </div>
+    </div>
+
+    <!-- //game screen -->
+    <div id="gameScreen" class="hidden">
+      <h1 id="myCounter">Your score</h1>
+      <div id="scoreContainer">
+        <img src="assets/80368956019f6ab.png" id="cloudDollars"></img>
+        <span>0</span>
+      </div>
+      <div id="gameArea"></div>
+    </div>
+  </body>
+</html>
